@@ -55,7 +55,7 @@ class WelcomeScreen extends StatelessWidget{
                    height: 15,
                  ),
                  const Text(
-                   "thefork",
+                   "theforks",
                    style: TextStyle(
                      fontSize: 50,
                      fontWeight: FontWeight.w900,
