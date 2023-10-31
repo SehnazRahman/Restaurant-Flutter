@@ -28,7 +28,7 @@ class WelcomeScreen extends StatelessWidget{
   Widget build(BuildContext context) {
    return Scaffold(
        body: Column(
-         children: [
+           children: [
            Container(
              padding: const EdgeInsets.all(Dimensions.paddingSizeExtraLarge),
              height: 670,
