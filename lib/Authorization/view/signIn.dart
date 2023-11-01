@@ -73,6 +73,7 @@ class _LoginPageState extends State<LoginPage>{
                   const BorderSide(color: rColor.greenContainer,width: 2)),
               ),
             ),
+             SizedBox(height: Dimensions.spacebtwnSmallContainer,),
              const Text("Forget Password?", style: TextStyle(decoration: TextDecoration.underline,color: rColor.fontOverWhite,fontSize: 15),),
             const SizedBox(
               height: Dimensions.spacebtwnContainer,

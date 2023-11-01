@@ -32,6 +32,7 @@ import 'package:flutter/material.dart';
     static const FontWeight Bold = FontWeight.w900;
 
     // Spacing
+    static const double spacebtwnSmallContainer = 5.0;
     static const double spacebtwnContainer = 30.0;
     static const double spacebtwnItem = 50.0;
 
@@ -42,7 +43,7 @@ import 'package:flutter/material.dart';
     //Search Bar height and width
     static const double searchHeight=  48.0;
     static const double searchWidth= 428.0;
-    static const double searchGoWidth=  57.0;
+    static const double searchGoWidth=  71.0;
 
     //Description Dishes, Incoming, Beverages, Dessert
     static const double ListTabHeight=  30.0;
@@ -55,4 +56,14 @@ import 'package:flutter/material.dart';
     static const double descriptionWidth=  316.0;
     static const double descriptionOfferHeight= 30.0;
     static const double descriptionOfferWidth=  48.0;
+    static const double descriptionBookOfferHeight=  39.0;
+    static const double descriptionBookOfferWidth=  272.0;
+
+    // Description Dialogue Box
+    static const double dialogueBoxWidth=  320.0;
+    static const double dialogueBoxHeight=  184.0;
+
+    // Incoming Image Container
+    static const double imageBoxWidth=  148.0;
+    static const double imageBoxHeight=  95.0;
   }

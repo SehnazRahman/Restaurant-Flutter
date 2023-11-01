@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:restaurant/const/color.dart';
 import 'package:restaurant/const/styling.dart';
 import 'package:restaurant/data/home/description/description.dart';
+import 'package:restaurant/data/home/incoming/incoming.dart';
 
 
 class Home extends StatefulWidget{
@@ -46,21 +48,24 @@ class _HomeState extends State<Home> {
                     const SizedBox(height: Dimensions.spacebtwnContainer,),
                     Container(
                       height: Dimensions.searchHeight,
-                      width: Dimensions.searchWidth,
+                      width: MediaQuery.of(context).size.width,
                       decoration: BoxDecoration(
                         border: Border.all(color: rColor.greenContainer,),
                         borderRadius: BorderRadius.circular(10),
                     ),
                     child: Row(
                       children: [
-                         const Row(
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: [
-                            Icon(Icons.search, color: rColor.grey,),
-                            Text("Type of cuisine,name of restaurant...",
-                              style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.grey),),
-                          ],
+                         const Padding(
+                           padding: EdgeInsets.all(Dimensions.paddingSizeTine),
+                           child: Row(
+                            mainAxisAlignment: MainAxisAlignment.start,
+                            children: [
+                              Icon(Icons.search, color: rColor.grey,),
+                              Text("Type of cuisine,name of restaurant...",
+                                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.grey),),
+                            ],
                         ),
+                         ),
                         Container(
                           height: Dimensions.searchHeight,
                           width: Dimensions.searchGoWidth,
@@ -77,37 +82,40 @@ class _HomeState extends State<Home> {
                         Flexible(
                           child: SizedBox(
                             height: Dimensions.ListTabHeight,
-                            width: Dimensions.ListTabWidth,
+                            width: Dimensions.ListTabWidth *0.9,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
                                 Container(
                                   height: Dimensions.ItemTabHeight,
-                             width:Dimensions.ItemTabWidth ,
-                             decoration: const BoxDecoration(
+                                  width:Dimensions.ItemTabWidth*0.8 ,
+                                  decoration: const BoxDecoration(
                                  color: rColor.greenContainer,
                                  borderRadius:BorderRadius.all(Radius.circular(6)) ),
                                   child: const Center(child: Text('Description', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),
                                   Container(height: Dimensions.ItemTabHeight,
-                           width:Dimensions.ItemTabWidth ,
-                           decoration: const BoxDecoration(
-                               color: rColor.greenContainer,
-                               borderRadius:BorderRadius.all(Radius.circular(6)) ),
-                           child: const Center(child: Text('Incoming', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),
+                                    width:Dimensions.ItemTabWidth*0.8,
+                                      decoration: const BoxDecoration(
+                                      color: rColor.greenContainer,
+                                      borderRadius:BorderRadius.all(Radius.circular(6)) ),
+                                    child:  Center(child: TextButton( onPressed: () {
+                                      Get.to(Incoming());
+                                    },
+                                        child: Text('Incoming', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),),
                                   Container(height: Dimensions.ItemTabHeight,
-                                       width:Dimensions.ItemTabWidth ,
+                                       width:Dimensions.ItemTabWidth*0.8 ,
                                        decoration: const BoxDecoration(
                                            color: rColor.greenContainer,
                                            borderRadius:BorderRadius.all(Radius.circular(6)) ),
                                        child: const Center(child: Text('Dish', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),
                                   Container(height: Dimensions.ItemTabHeight,
-                                       width:Dimensions.ItemTabWidth ,
+                                       width:Dimensions.ItemTabWidth*0.8 ,
                                        decoration: const BoxDecoration(
                                            color: rColor.greenContainer,
                                            borderRadius:BorderRadius.all(Radius.circular(6)) ),
                                        child: const Center(child: Text('Dessert', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),
                                    Container(height: Dimensions.ItemTabHeight,
-                                       width:Dimensions.ItemTabWidth ,
+                                       width:Dimensions.ItemTabWidth*0.8 ,
                                        decoration: const BoxDecoration(
                                            color: rColor.greenContainer,
                                            borderRadius:BorderRadius.all(Radius.circular(6)) ),

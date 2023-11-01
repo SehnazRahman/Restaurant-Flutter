@@ -83,15 +83,15 @@ class WelcomeScreen extends StatelessWidget{
                    height: 15,
                  ),
                  Container(
-                   height: 50,
-                   width: 240,
+                   height: Dimensions.containerHeight,
+                   width: Dimensions.containerWidth,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),
                    child: Row(
                      mainAxisAlignment: MainAxisAlignment.center,
                        children: [
-                         Image.asset('Assets/images/googlebg.png', height: 25,width: 25,),
+                         Image.asset('Assets/images/img_1.png', height: 25,width: 25,),
                          const Text("Continue with Google",
                              style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
                        ]),
@@ -100,16 +100,16 @@ class WelcomeScreen extends StatelessWidget{
                    height: 10,
                  ),
                  Container(
-                   height: 50,
-                   width: 240,
+                   height: Dimensions.containerHeight,
+                   width: Dimensions.containerWidth,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),
                    child: Row(
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: [
-                       Image.asset('Assets/images/attheratebg.png', height: 25,width: 25,),
-                       const Text(" Continue with Google",
+                       Image.asset('Assets/images/img.png', height: 25,width: 25,),
+                       const Text(" Continue with Email",
                            style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
                      ],
                    ),
