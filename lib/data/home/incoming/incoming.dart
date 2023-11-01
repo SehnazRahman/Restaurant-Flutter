@@ -26,7 +26,7 @@ class Incoming extends StatelessWidget{
            leading: SizedBox(
              height: Dimensions.imageBoxHeight,
              width: Dimensions.imageBoxWidth,
-             child: Image(image: AssetImage('images/cutlerybg.jpg'),height: Dimensions.imageBoxHeight,width: Dimensions.imageBoxWidth,),
+             child: Image(image: AssetImage('images/burTruffle.jpg'),height: Dimensions.imageBoxHeight,width: Dimensions.imageBoxWidth,),
            ),
            title: Text("Burrata with truffle cream and tomato"),
          )
