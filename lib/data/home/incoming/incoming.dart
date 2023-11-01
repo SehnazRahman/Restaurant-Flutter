@@ -24,9 +24,9 @@ class Incoming extends StatelessWidget{
                   fontWeight: Dimensions.medium) ,),
          const ListTile(
            leading: SizedBox(
-             height: Dimensions.imageBoxHeight,
-             width: Dimensions.imageBoxWidth,
-             child: Image(image: AssetImage('images/burTruffle.jpg'),height: Dimensions.imageBoxHeight,width: Dimensions.imageBoxWidth,),
+             height: Dimensions.imageBoxHeight*0.8,
+             width: Dimensions.imageBoxWidth * 0.8,
+             child: Image(image: AssetImage('Assets/images/burTruffle.jpg'),height: Dimensions.imageBoxHeight,width: Dimensions.imageBoxWidth,),
            ),
            title: Text("Burrata with truffle cream and tomato"),
          )

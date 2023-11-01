@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/main.dart';
 
 class SplashScreen extends StatefulWidget {
+  const SplashScreen({super.key});
+
   @override
   State<SplashScreen> createState() => _SplashScreenState();
 }
@@ -27,7 +29,7 @@ class _SplashScreenState extends State<SplashScreen> {
         body: Container(
             color: Colors.green,
             child: Center(
-                child: Container(
+                child: SizedBox(
                   height: 100,
                   width: 150,
                   child : Image.asset('Assets/images/cutlerybg.png',),)

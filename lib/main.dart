@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return GetMaterialApp(
+    return const GetMaterialApp(
       title:'Restaurant',
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
@@ -84,7 +84,7 @@ class WelcomeScreen extends StatelessWidget{
                  ),
                  Container(
                    height: Dimensions.containerHeight,
-                   width: Dimensions.containerWidth,
+                   width: Dimensions.containerWidth * 0.75,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),
@@ -101,7 +101,7 @@ class WelcomeScreen extends StatelessWidget{
                  ),
                  Container(
                    height: Dimensions.containerHeight,
-                   width: Dimensions.containerWidth,
+                   width: Dimensions.containerWidth * 0.75,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),

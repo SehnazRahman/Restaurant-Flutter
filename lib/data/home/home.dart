@@ -15,6 +15,7 @@ class Home extends StatefulWidget{
 }
 
 class _HomeState extends State<Home> {
+
   @override
   Widget build(BuildContext context) {
 
@@ -82,7 +83,7 @@ class _HomeState extends State<Home> {
                         Flexible(
                           child: SizedBox(
                             height: Dimensions.ListTabHeight,
-                            width: Dimensions.ListTabWidth *0.9,
+                            width: Dimensions.ListTabWidth,
                             child: Row(
                               mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [

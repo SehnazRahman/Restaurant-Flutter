@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/const/styling.dart';
 import 'package:restaurant/const/color.dart';
 import 'package:get/get.dart';
+import 'package:restaurant/data/home/description/dateTime/dateTime.dart';
 
 class Description extends StatefulWidget{
   const Description({super.key});
@@ -87,8 +88,12 @@ class _Description extends State<Description>{
               width: Dimensions.descriptionBookOfferWidth,
               decoration: BoxDecoration(
                 border: Border.all(color: rColor.greenContainer,),),
-                child: const Center(child: Text("BOOK WITH THIS OFFER",
-                    style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:rColor.grey))),),
+                child: Center(
+                    child: TextButton( onPressed: (){
+                      Get.to(const DateTime());
+                    },
+                        child:const Text("BOOK WITH THIS OFFER",
+                    style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:rColor.grey))),),)
             ],
           ),
         ),
