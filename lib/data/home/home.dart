@@ -24,15 +24,21 @@ class _HomeState extends State<Home> {
     // Tab (text:'Profile', icon: Icon(Icons.person_outline)),
     return Scaffold(
         bottomNavigationBar:BottomNavigationBar(
+          currentIndex: 1,
+          useLegacyColorScheme: false,
+          unselectedLabelStyle: TextStyle(color: Colors.white),
+          selectedLabelStyle: TextStyle(color: Colors.white),
+          backgroundColor:Colors.green ,
             items: const <BottomNavigationBarItem> [
         BottomNavigationBarItem(
-            icon:Icon(Icons.home_filled),
-            label: 'Home'),
+
+            icon:Icon(Icons.home_rounded, color: Colors.white,),
+            label: 'Home',),
         BottomNavigationBarItem(
-            icon:Icon(Icons.shopping_cart_outlined),
+            icon:Icon(Icons.shopping_cart_outlined,color: Colors.white,),
             label: 'Cart'),
         BottomNavigationBarItem(
-            icon:Icon(Icons.person_outline),
+            icon:Icon(Icons.person_outline,color: Colors.white,),
             label: 'Profile'),
       ],
     ),
@@ -42,7 +48,7 @@ class _HomeState extends State<Home> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                   const SizedBox(height: Dimensions.spacebtwnItem),
-                    const Text("Good Afternoon!",style: TextStyle(fontSize: Dimensions.textSizeSmall,color:rColor.grey)),
+                    const Text("Good Afternoon!",style: TextStyle(fontSize: Dimensions.textSizeSmall,color:rColor.infoDisplayFont)),
                     const Text("David Watson",style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.medium)),
                     const SizedBox(height: Dimensions.spacebtwnItem,),
                     const Text("Find your best meal..",style: TextStyle(fontSize: Dimensions.textSizeSemiLarge,fontWeight: Dimensions.medium)),
@@ -57,19 +63,20 @@ class _HomeState extends State<Home> {
                     child: Row(
                       children: [
                          const Padding(
-                           padding: EdgeInsets.all(Dimensions.paddingSizeTine),
+                           padding: EdgeInsets.all(Dimensions.paddingSizeExtraSmall),
                            child: Row(
                             mainAxisAlignment: MainAxisAlignment.start,
                             children: [
-                              Icon(Icons.search, color: rColor.grey,),
+                              Icon(Icons.search, color: rColor.infoDisplayFont,),
                               Text("Type of cuisine,name of restaurant...",
-                                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.grey),),
+                                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
+                              SizedBox(width: 36,)
                             ],
                         ),
                          ),
                         Container(
                           height: Dimensions.searchHeight,
-                          width: Dimensions.searchGoWidth,
+                          width: MediaQuery.of(context).size.width*0.2,
                           decoration: const BoxDecoration(
                             color: rColor.greenContainer,
                             borderRadius: BorderRadius.only(topRight: Radius.circular(10),bottomRight: Radius.circular(10))
@@ -100,9 +107,9 @@ class _HomeState extends State<Home> {
                                       color: rColor.greenContainer,
                                       borderRadius:BorderRadius.all(Radius.circular(6)) ),
                                     child:  Center(child: TextButton( onPressed: () {
-                                      Get.to(Incoming());
+                                      Get.to(const Incoming());
                                     },
-                                        child: Text('Incoming', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),),
+                                        child: const Text('Incoming', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverGreen),)),),),
                                   Container(height: Dimensions.ItemTabHeight,
                                        width:Dimensions.ItemTabWidth*0.8 ,
                                        decoration: const BoxDecoration(

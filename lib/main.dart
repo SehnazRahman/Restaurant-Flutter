@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
       title:'Restaurant',
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),
@@ -84,7 +84,7 @@ class WelcomeScreen extends StatelessWidget{
                  ),
                  Container(
                    height: Dimensions.containerHeight,
-                   width: Dimensions.containerWidth * 0.75,
+                   width: Dimensions.containerWidth * 0.85,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),
@@ -92,7 +92,7 @@ class WelcomeScreen extends StatelessWidget{
                      mainAxisAlignment: MainAxisAlignment.center,
                        children: [
                          Image.asset('Assets/images/img_1.png', height: 25,width: 25,),
-                         const Text("Continue with Google",
+                         const Text("  Continue with Google",
                              style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
                        ]),
                  ),
@@ -101,7 +101,7 @@ class WelcomeScreen extends StatelessWidget{
                  ),
                  Container(
                    height: Dimensions.containerHeight,
-                   width: Dimensions.containerWidth * 0.75,
+                   width: Dimensions.containerWidth * 0.85,
                    decoration: BoxDecoration(
                        borderRadius: BorderRadius.circular(20),
                        color: rColor.whiteContainer),
@@ -109,7 +109,7 @@ class WelcomeScreen extends StatelessWidget{
                      mainAxisAlignment: MainAxisAlignment.center,
                      children: [
                        Image.asset('Assets/images/img.png', height: 25,width: 25,),
-                       const Text(" Continue with Email",
+                       const Text("  Continue with Email",
                            style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
                      ],
                    ),

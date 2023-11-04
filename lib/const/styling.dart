@@ -33,6 +33,7 @@ import 'package:flutter/material.dart';
 
     // Spacing
     static const double spacebtwnSmallContainer = 5.0;
+    static const double spacebtwnfoodContainer = 10.0;
     static const double spacebtwnContainer = 30.0;
     static const double spacebtwnItem = 50.0;
 
@@ -66,4 +67,33 @@ import 'package:flutter/material.dart';
     // Incoming Image Container
     static const double imageBoxWidth=  148.0;
     static const double imageBoxHeight=  95.0;
+
+    //Dimension of Calender Container
+    static const double calenderContainerWidth=  442.0;
+    static const double calenderContainerHeight=  465.0;
+
+    //Dimension of Food Container
+    static const double foodContainerWidth=  395.0;
+    static const double foodContainerHeight=  252.0;
+
+    // Dimension of small Discount Food container
+    static const double discountWidth=  74.0;
+    static const double discountHeight=  50.0;
+
+    //Dimension to add number of people
+    static const double addPleoplecCntnrWidth=  420.0;
+    static const double addPleoplecCntnrHeight=  341.0;
+
+    // checkbox Container
+    static const double checkBoxCntnrheight=  92.0;
+
+    // Register Now container dimension
+    static const double reserveNowWidth=  378.0;
+    static const double reserveNowHeight=  56.0;
+
+    //EmailId Image ContainerDimension
+    static const double bookingImageWidth=  480.0;
+    static const double bookingImageHeight=  155.0;
+
+
   }

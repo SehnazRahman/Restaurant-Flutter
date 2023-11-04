@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:restaurant/const/styling.dart';
 import 'package:restaurant/const/color.dart';
 import 'package:get/get.dart';
-import 'package:restaurant/data/home/description/dateTime/dateTime.dart;
+import '../../../calender/dateTime/dateTimeYear.dart';
 
 class Description extends StatefulWidget{
   const Description({super.key});
@@ -61,9 +61,9 @@ class _Description extends State<Description>{
                                           mainAxisAlignment: MainAxisAlignment.center,
                                           crossAxisAlignment: CrossAxisAlignment.center,
                                     children: [
-                                      const Text("Drinks and Menu not included",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.grey),),
+                                      const Text("Drinks and Menu not included",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
                                       const SizedBox(height: Dimensions.spacebtwnContainer,),
-                                      const Text("Valid in the selected time slot",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.grey),),
+                                      const Text("Valid in the selected time slot",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
                                       const SizedBox(height: Dimensions.spacebtwnContainer,),
                                       Container(
                                         height: Dimensions.descriptionBookOfferHeight,
@@ -74,7 +74,7 @@ class _Description extends State<Description>{
                                           Get.back();
                                         },
                                         child: const Text("BOOK WITH THIS OFFER",
-                                            style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: rColor.grey)),),
+                                            style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: rColor.infoDisplayFont)),),
                                       )],
                             ),
                         ),
@@ -93,7 +93,7 @@ class _Description extends State<Description>{
                       Get.to(const DateTimeYear());
                     },
                         child:const Text("BOOK WITH THIS OFFER",
-                    style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:rColor.grey))),),)
+                    style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:rColor.infoDisplayFont))),),)
             ],
           ),
         ),

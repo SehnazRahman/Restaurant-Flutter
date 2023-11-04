@@ -95,6 +95,8 @@ class _LoginPageState extends State<LoginPage>{
                 height: Dimensions.containerHeight,
                 width: Dimensions.containerWidth,
                 decoration: BoxDecoration(
+                    boxShadow: const [
+                      BoxShadow(color: Colors.green,blurRadius:5.0,spreadRadius:2.0,blurStyle: BlurStyle.outer)],
                     borderRadius: BorderRadius.circular(20),
                     color: rColor.whiteContainer),
                 child: Row(mainAxisAlignment: MainAxisAlignment.center,

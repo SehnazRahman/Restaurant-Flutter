@@ -112,7 +112,7 @@ class _RegistrationPage extends State<Registration>{
                               backgroundColor: Colors.green,
                               shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                               textStyle: const TextStyle(
-                                  color: Colors.white, fontSize: Dimensions.textSizeDefault, fontWeight: Dimensions.semiBold),
+                                   fontSize: Dimensions.textSizeDefault, fontWeight: Dimensions.semiBold),
                             ),
                             )),
 
