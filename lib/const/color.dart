@@ -25,4 +25,7 @@ class rColor{
 
  // Hint or Select container
   static const Color selectedBorder = Colors.grey;
+
+  // Facebook container
+  static const Color fbContainer = Colors.indigo;
 }
