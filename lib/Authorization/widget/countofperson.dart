@@ -13,7 +13,7 @@ class _CountOfPeopleState extends State<CountOfPeople> {
   @override
   Widget build(BuildContext context) {
     return  Scaffold(
-      body: Container(
+      body: SizedBox(
         height: MediaQuery.of(context).size.height,
         width: MediaQuery.of(context).size.width,
         child: GridView.count(
@@ -21,7 +21,7 @@ class _CountOfPeopleState extends State<CountOfPeople> {
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
           scrollDirection: Axis.vertical,
-          padding: EdgeInsets.all(Dimensions.paddingSizeLarge),
+          padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
           children: List.generate(50, (index){
 
     return Container(
@@ -34,7 +34,7 @@ class _CountOfPeopleState extends State<CountOfPeople> {
     children:[
     Expanded
     ( flex : 2,
-    child: Center(child: Text('$index', style: TextStyle(fontSize: Dimensions.textSizeSmall),)),),
+    child: Center(child: Text('$index', style: const TextStyle(fontSize: Dimensions.textSizeSmall),)),),
     Expanded(
     flex: 2,
     child: Container(

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:restaurant/const/color.dart';
 import 'package:restaurant/const/styling.dart';
-import '../data/home/home.dart';
+import '../data/home/MyHome/home.dart';
 import '../registration/verification.dart';
 
 class Location extends StatelessWidget {
@@ -11,15 +11,16 @@ class Location extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        appBar: AppBar(
+          backgroundColor: Colors.transparent,
+          leading: IconButton(
+              onPressed: () { Get.back(); },
+              icon: const Icon(Icons.arrow_back_sharp,color: Colors.black)),
+          elevation: 0,
+        ),
       body: Column(
         crossAxisAlignment:CrossAxisAlignment.start,
         children: [
-          SizedBox(
-            height: 50,
-            child: IconButton(icon: const Icon(Icons.arrow_back), onPressed: () {
-              Get.back();
-            },),
-          ),
           Padding(
             padding: const EdgeInsets.all(Dimensions.paddingSizeExtraLarge),
             child: Column(

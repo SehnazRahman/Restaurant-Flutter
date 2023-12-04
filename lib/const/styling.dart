@@ -16,10 +16,12 @@ import 'package:flutter/material.dart';
 
 
     // Text Dimension
+    static const double textSizeMini = 8.0;
     static const double textSizeExtraSmall = 10.0;
     static const double textSizeSmall = 12.0;
     static const double textSizeSearch = 14.0;
     static const double textSizeDefault = 16.0;
+    static const double textSizeMedium= 18.0;
     static const double textSizeDefaultLarge = 20.0;
     static const double textSizeSemiLarge = 24.0;
     static const double textSizeLarge = 32.0;
@@ -95,5 +97,33 @@ import 'package:flutter/material.dart';
     static const double bookingImageWidth=  480.0;
     static const double bookingImageHeight=  155.0;
 
+    // Dimension of location and delete tab
+    static const double squareContainerWidth=  176.0;
+    static const double squareContainerHeight=  154.0;
 
+    // Dimension of Destination Loaction
+
+    static const double destinationLocationWidth= 480.0;
+    static const double destinationLocationheight= 305.0;
+
+    //Yes or No container dimension
+    static const double confirmationWidth= 99.0;
+    static const double confirmationheight= 40.0;
+
+    // Square box dimention
+    static const double squareWidth= 48.0;
+    static const double squareHeight= 48.0;
+
+    // Container height for My details
+    static const double myDetailsWidth= 381.0;
+
+    // Tap container dimension
+    static const double reviewOptionHeight= 39.0;
+    static const double  reviewOptionWidth= 148.0;
+    static const double customerReviewWidth= 103.0;
+    static const double customerReviewHeight= 69.0;
+    static const double dropdownHeight= 44.0;
+    static const double dropdownWidth= 84.0;
+    static const double squareimgDimension= 64.0;
   }
+
