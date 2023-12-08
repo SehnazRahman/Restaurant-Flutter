@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:restaurant/Authorization/view/welcome.dart';
 import 'package:restaurant/homeDemo/homeController.dart';
 import 'package:restaurant/splashscreen/splashScreen.dart';
+import 'package:restaurant/theme/theme.dart';
 import 'Authorization/controller/authController.dart';
 void main(){
   Get.put(AuthController());
@@ -14,7 +15,8 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const GetMaterialApp(
+    return GetMaterialApp(
+      theme: DecorationTheme.lightTheme,
       title:'Restaurant',
       debugShowCheckedModeBanner: false,
       home: SplashScreen(),

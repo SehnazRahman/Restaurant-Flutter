@@ -66,10 +66,10 @@ class _TripAdvisorState extends State<TripAdvisor> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text('See options on tripadvisor',
-                    style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.fontOverWhite),),
+                    style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.fontOverWhite),),
                   const SizedBox(width: Dimensions.spacebtwnContainer),
                   GestureDetector(
-                      child: const Icon(Icons.arrow_drop_down,color: rColor.infoDisplayFont),
+                      child: const Icon(Icons.arrow_drop_down,color: colorDecoration.infoDisplayFont),
                     onTap: (){
                     Get. to (const OptionTripAdvisor());}),
                 ],

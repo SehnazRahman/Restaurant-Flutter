@@ -60,7 +60,7 @@ class _CancelBooking extends State<CancelBooking> {
           SizedBox(height: Dimensions.spacebtwnContainer),
           Text("Are you sure you want to cancel the booking?",
             style: TextStyle(
-              fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont
+              fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont
             ),),
               SizedBox(height: Dimensions.spacebtwnContainer),
               SizedBox(

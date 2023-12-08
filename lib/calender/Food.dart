@@ -37,7 +37,7 @@ class _Food extends State<Food>{
               children: [
                 SizedBox(height: Dimensions.spacebtwnContainer,),
                 Text(DefineText.searchRstntText,
-                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont ),textAlign: TextAlign.center),
+                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont ),textAlign: TextAlign.center),
                 ],
                 ),
               const SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -45,7 +45,7 @@ class _Food extends State<Food>{
                   height: Dimensions.foodContainerHeight*0.85,
                   width:Dimensions.foodContainerWidth,
                   decoration: BoxDecoration(
-                  border: Border.all(color: rColor.calenderContainer,),
+                  border: Border.all(color: colorDecoration.calenderContainer,),
                   ),
 
                 child: Padding(
@@ -63,7 +63,7 @@ class _Food extends State<Food>{
                           width: Dimensions.discountWidth,
                             decoration: BoxDecoration(
                               boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                              border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                              border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                             ),
                           child: Column(
                             children: [
@@ -75,11 +75,11 @@ class _Food extends State<Food>{
                                 child: Container(
                                   alignment: Alignment.center,
                                   decoration: const BoxDecoration(
-                                    color: rColor.discountContainer,
+                                    color: colorDecoration.discountContainer,
                                       boxShadow: [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
                                       borderRadius:BorderRadius.only(bottomLeft:Radius.circular(5),bottomRight: Radius.circular(5)) ,
                                 ),
-                                child: const Text("-30%",style: TextStyle(color: rColor.discountFont,fontSize: Dimensions.textSizeSmall),),),
+                                child: const Text("-30%",style: TextStyle(color: colorDecoration.discountFont,fontSize: Dimensions.textSizeSmall),),),
                               ),
                             ],
                           ),
@@ -89,7 +89,7 @@ class _Food extends State<Food>{
                           width: Dimensions.discountWidth,
                           decoration: BoxDecoration(
                               boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                              border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                              border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                           ),
                           child: Column(
                             children: [
@@ -101,11 +101,11 @@ class _Food extends State<Food>{
                                 child: Container(
                                   alignment: Alignment.center,
                                   decoration: const BoxDecoration(
-                                    color: rColor.discountContainer,
+                                    color: colorDecoration.discountContainer,
                                     boxShadow: [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
                                     borderRadius:BorderRadius.only(bottomLeft:Radius.circular(5),bottomRight: Radius.circular(5)) ,
                                   ),
-                                  child: const Text("-30%",style: TextStyle(color: rColor.discountFont,fontSize: Dimensions.textSizeSmall),),),
+                                  child: const Text("-30%",style: TextStyle(color: colorDecoration.discountFont,fontSize: Dimensions.textSizeSmall),),),
                               ),
                             ],
                           ),
@@ -115,7 +115,7 @@ class _Food extends State<Food>{
                           width: Dimensions.discountWidth,
                           decoration: BoxDecoration(
                               boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                              border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                              border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                           ),
                           child: Column(
                             children: [
@@ -127,11 +127,11 @@ class _Food extends State<Food>{
                                 child: Container(
                                   alignment: Alignment.center,
                                   decoration: const BoxDecoration(
-                                    color: rColor.discountContainer,
+                                    color: colorDecoration.discountContainer,
                                     boxShadow: [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
                                     borderRadius:BorderRadius.only(bottomLeft:Radius.circular(5),bottomRight: Radius.circular(5)) ,
                                   ),
-                                  child: const Text("-30%",style: TextStyle(color: rColor.discountFont,fontSize: Dimensions.textSizeSmall),),),
+                                  child: const Text("-30%",style: TextStyle(color: colorDecoration.discountFont,fontSize: Dimensions.textSizeSmall),),),
                               ),
                             ],
                           ),
@@ -150,7 +150,7 @@ class _Food extends State<Food>{
                               width: Dimensions.discountWidth,
                               decoration: BoxDecoration(
                                   boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                                  border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                                  border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                                 ),
                               child: const Center(child: Text("21:30", style: TextStyle(fontSize: Dimensions.textSizeSmall),))),
                             Container(
@@ -158,7 +158,7 @@ class _Food extends State<Food>{
                                 width: Dimensions.discountWidth,
                                 decoration: BoxDecoration(
                                     boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                                    border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                                    border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                                     ),
                               child: const Center(child: Text("22:00",style: TextStyle(fontSize: Dimensions.textSizeSmall),)),),
                   ],

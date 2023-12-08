@@ -29,21 +29,17 @@ class _MyCartState extends State<MyCart> {
 
              shrinkWrap: true,
              children:  const [
-               Card(
+               Card(borderOnForeground: false,
                  elevation: 5,
                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.all(Radius.circular(10))),
                  child: ListTile(
-                   leading:  SizedBox(
-                     height: Dimensions.imageBoxHeight*0.9,
-                     width: Dimensions.imageBoxWidth * 0.9,
-                     child: Image(image: AssetImage('Assets/images/Fagottoni_di_ricotta.png'),fit: BoxFit.fill,height: Dimensions.imageBoxHeight,width: Dimensions.imageBoxWidth,),
-                   ),
+                   leading: Image(image: AssetImage('Assets/images/Fagottoni_di_ricotta.png'),fit: BoxFit.fill),
                    title:  Text("Fagottoni di ricotta e pear (sachets stuffed and pear with cheese sauce and walnuts)",
                      style: TextStyle(fontSize: Dimensions.textSizeSearch),),
                    subtitle: Text("Rs 14.9",
                      style: TextStyle(
                          fontSize: Dimensions.textSizeSearch,
-                         color: rColor.infoDisplayFont),),
+                         color: colorDecoration.infoDisplayFont),),
                    ),
                ),
                Card(
@@ -60,7 +56,7 @@ class _MyCartState extends State<MyCart> {
                    subtitle: Text("Rs 14.9",
                            style: TextStyle(
                                fontSize: Dimensions.textSizeSearch,
-                               color: rColor.infoDisplayFont),),
+                               color: colorDecoration.infoDisplayFont),),
                  ),
                  ),
                Card(
@@ -77,7 +73,7 @@ class _MyCartState extends State<MyCart> {
                    subtitle: Text("Rs 12.5",
                            style: TextStyle(
                                fontSize: Dimensions.textSizeSearch,
-                               color: rColor.infoDisplayFont),),
+                               color: colorDecoration.infoDisplayFont),),
                      ),),
            ],
            ),
@@ -95,7 +91,7 @@ class _MyCartState extends State<MyCart> {
                width: Dimensions.containerWidth,
                decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(10),
-                   color: rColor.greenContainer),
+                   color: colorDecoration.greenContainer),
                child:ElevatedButton(
                  onPressed: (){
                    Get.to(const Home());

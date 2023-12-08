@@ -97,7 +97,7 @@ class _ChoosePaymentState extends State<ChoosePayment> {
               mainAxisAlignment: MainAxisAlignment.spaceBetween ,
               children: [
                 Text('Total', style: TextStyle(fontSize: Dimensions.textSizeDefaultLarge,fontWeight: Dimensions.medium),),
-                Text('Rs 23 ', style: TextStyle(fontSize: Dimensions.textSizeMedium,color: rColor.infoDisplayFont),),
+                Text('Rs 23 ', style: TextStyle(fontSize: Dimensions.textSizeMedium,color: colorDecoration.infoDisplayFont),),
               ],
             ),
             SizedBox(height: Dimensions.spacebtwnContainer),

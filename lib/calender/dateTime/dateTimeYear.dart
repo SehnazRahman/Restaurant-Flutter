@@ -15,6 +15,7 @@ class DateTimeYear extends StatefulWidget{
 
 class _DateTimeYear extends State<DateTimeYear> {
   DateTime focusDate = DateTime.now();
+  DateTime? _selectedDay;
   @override
   Widget build(BuildContext context) {
   return Scaffold(
@@ -38,7 +39,7 @@ class _DateTimeYear extends State<DateTimeYear> {
                     children: [
                       SizedBox(height: Dimensions.spacebtwnContainer,),
                      Text(DefineText.searchRstntText,
-                                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont ),textAlign: TextAlign.center),
+                                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont ),textAlign: TextAlign.center),
                     ],
                   ),
                   const SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -46,22 +47,35 @@ class _DateTimeYear extends State<DateTimeYear> {
                     height: Dimensions.calenderContainerHeight*0.85,
                     width:Dimensions.calenderContainerWidth,
                     decoration: BoxDecoration(
-                      border: Border.all(color: rColor.calenderContainer,),
+                      border: Border.all(color: colorDecoration.calenderContainer,),
                     ),
 
                     child: TableCalendar(
                       headerStyle: const HeaderStyle(formatButtonVisible: false, titleCentered: true,),
-                      firstDay: DateTime.utc(2023, 11, 2),
+                      firstDay: DateTime.utc(2023, 12, 2),
                       focusedDay:focusDate,
+                      startingDayOfWeek: StartingDayOfWeek.monday,
                       lastDay: DateTime(2024, 2,1),
                       calendarStyle: const CalendarStyle(
                         isTodayHighlighted: true,
                         weekendTextStyle: TextStyle(color: Colors.grey),
                         todayDecoration: BoxDecoration(
-                          color: rColor.greenContainer,
+                          color: Colors.grey,
                           shape: BoxShape.circle,
-                        )
+                        ),
+                        selectedDecoration: BoxDecoration(color: Colors.green,shape: BoxShape.circle),
                       ),
+                      onDaySelected: (selectedDay,focusDay){
+                        if (!isSameDay (_selectedDay,selectedDay)){
+                          setState(() {
+                            _selectedDay = selectedDay;
+                            focusDate = focusDay;
+                          });
+                        }
+                      },
+                      selectedDayPredicate: (day){
+                        return isSameDay(_selectedDay,day);
+                      },
                     ),
                   ),
                   const SizedBox(height: Dimensions.spacebtwnSmallContainer,),

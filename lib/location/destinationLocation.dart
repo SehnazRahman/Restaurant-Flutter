@@ -39,7 +39,7 @@ class DestinationLocation extends StatelessWidget {
                      child: Text("Melchor Fernandez Almagro Street,62, 28029, Madrid, Spain",style:TextStyle(
                          fontSize: Dimensions.textSizeDefault,
                          fontWeight: Dimensions.medium,
-                         color: rColor.infoDisplayFont
+                         color: colorDecoration.infoDisplayFont
                      )),
                    ),
                  ],
@@ -58,7 +58,7 @@ class DestinationLocation extends StatelessWidget {
                       child: Text("Metro Barrio del Pilar (L9) and bus 147",style:TextStyle(
                           fontSize: Dimensions.textSizeDefault,
                           fontWeight: Dimensions.medium,
-                          color: rColor.infoDisplayFont
+                          color: colorDecoration.infoDisplayFont
                       )),
                     ),
                   ],
@@ -77,7 +77,7 @@ class DestinationLocation extends StatelessWidget {
                       child: Text("14:30",style:TextStyle(
                           fontSize: Dimensions.textSizeDefault,
                           fontWeight: Dimensions.medium,
-                          color: rColor.infoDisplayFont
+                          color: colorDecoration.infoDisplayFont
                       )),
                     ),
                   ],
@@ -88,7 +88,7 @@ class DestinationLocation extends StatelessWidget {
                     width: Dimensions.containerWidth,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: rColor.greenContainer),
+                        color: colorDecoration.greenContainer),
                     child:ElevatedButton(
                       onPressed: (){
                         Get.to(const Confirm());

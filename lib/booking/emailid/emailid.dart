@@ -1,4 +1,4 @@
-import'package:flutter/material.dart';
+ import'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:restaurant/booking/reservationDetails/ConfimationReservationDetail.dart';
 import 'package:restaurant/const/color.dart';
@@ -46,7 +46,7 @@ class _BookingEmailidState extends State<BookingEmailid> {
           ]),
           const SizedBox(height: Dimensions.spacebtwnContainer),
           const Text("Indicate your email address to complete the reservation",
-            style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.selectedBorder),),
+            style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.selectedBorder),),
           Padding(
             padding: const EdgeInsets.all(Dimensions.paddingSizeExtraLarge),
             child: Column(
@@ -60,9 +60,9 @@ class _BookingEmailidState extends State<BookingEmailid> {
                       hintText: "Ex: abc@example.com",
                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                      BorderSide(color: rColor.greenContainer,width:2)),
+                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                      const BorderSide(color: rColor.greenContainer,width: 2)),
+                      const BorderSide(color: colorDecoration.greenContainer,width: 2)),
                     ),
                   ),
                   const SizedBox(height: Dimensions.spacebtwnContainer),
@@ -71,7 +71,7 @@ class _BookingEmailidState extends State<BookingEmailid> {
                     width: Dimensions.containerWidth,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: rColor.greenContainer),
+                        color: colorDecoration.greenContainer),
                     child:ElevatedButton(
                       onPressed: (){
                         Get.to(const ReservationDetail());
@@ -85,7 +85,7 @@ class _BookingEmailidState extends State<BookingEmailid> {
                 ),
                 const SizedBox(height: Dimensions.spacebtwnContainer),
                 const Center(child: Text('or',style: TextStyle(
-                    fontSize: Dimensions.textSizeDefault,color: rColor.infoDisplayFont))),
+                    fontSize: Dimensions.textSizeDefault,color: colorDecoration.infoDisplayFont))),
                 const SizedBox(height: Dimensions.spacebtwnContainer),
                 Container(
                     height: Dimensions.containerHeight,
@@ -94,11 +94,11 @@ class _BookingEmailidState extends State<BookingEmailid> {
                         boxShadow: const [
                           BoxShadow(color: Colors.green,blurRadius:5.0,spreadRadius:2.0,blurStyle: BlurStyle.outer)],
                         borderRadius: BorderRadius.circular(10),
-                        color: rColor.whiteContainer),
+                        color: colorDecoration.whiteContainer),
                     child: Row(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset('Assets/images/googlebg.png', height: 25,width: 25,),
-                          const Text(" Continue with Google",style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
+                          const Text(" Continue with Google",style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: colorDecoration.fontOverWhite))
                         ]
                     )),
                 const SizedBox(height: Dimensions.spacebtwnContainer*0.5,),
@@ -107,11 +107,11 @@ class _BookingEmailidState extends State<BookingEmailid> {
                     width: Dimensions.containerWidth,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(10),
-                        color: rColor.fbContainer),
+                        color: colorDecoration.fbContainer),
                     child: Row(mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           Image.asset('Assets/images/img_2.png', height: 25,width: 25,),
-                          const Text(" Continue with Facebook",style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverGreen))
+                          const Text(" Continue with Facebook",style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: colorDecoration.fontOverGreen))
                         ]
                     )),
             ],),),

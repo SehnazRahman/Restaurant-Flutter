@@ -30,7 +30,7 @@ class _Description extends State<Description>{
                   height: Dimensions.descriptionHeight,
                   width: Dimensions.descriptionWidth,
                   decoration: BoxDecoration(
-                    border: Border.all(color: rColor.greenContainer,),
+                    border: Border.all(color: colorDecoration.greenContainer,),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.all(Dimensions.paddingSizeDefault),
@@ -44,11 +44,11 @@ class _Description extends State<Description>{
                               height: Dimensions.descriptionOfferHeight,
                                 width: Dimensions.descriptionOfferWidth,
                                 decoration: const BoxDecoration(
-                                color: rColor.greenContainer,
+                                color: colorDecoration.greenContainer,
                                 borderRadius:BorderRadius.all(Radius.circular(6)) ),
                                     child: const Center(
                                       child: Text('-30%',
-                                  style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.fontOverGreen),),
+                                  style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.fontOverGreen),),
                                     )),
                             const SizedBox(width: Dimensions.spacebtwnContainer,),
                             const Text('-30% on menu!',style: TextStyle(fontSize: Dimensions.homeDeal, fontWeight: Dimensions.medium),),
@@ -64,27 +64,27 @@ class _Description extends State<Description>{
                                 height:Dimensions.dialogueBoxHeight,
                                 width:Dimensions.dialogueBoxWidth,
                                 decoration: BoxDecoration(
-                                  color: rColor.whiteContainer,
-                                  border: Border.all(color: rColor.greenContainer,),),
+                                  color: colorDecoration.whiteContainer,
+                                  border: Border.all(color: colorDecoration.greenContainer,),),
                                 child:
                                       Column(
                                                     mainAxisAlignment: MainAxisAlignment.center,
                                                     crossAxisAlignment: CrossAxisAlignment.center,
                                               children: [
-                                                const Text("Drinks and Menu not included",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
+                                                const Text("Drinks and Menu not included",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont),),
                                                 const SizedBox(height: Dimensions.spacebtwnContainer,),
-                                                const Text("Valid in the selected time slot",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
+                                                const Text("Valid in the selected time slot",style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont),),
                                                 const SizedBox(height: Dimensions.spacebtwnContainer,),
                                                 Container(
                                                   height: Dimensions.descriptionBookOfferHeight,
                                                   width: Dimensions.descriptionBookOfferWidth,
                                                   decoration: BoxDecoration(
-                                                    border: Border.all(color: rColor.greenContainer,),),
+                                                    border: Border.all(color: colorDecoration.greenContainer,),),
                                                   child: TextButton(onPressed: () {
                                                     Get.back();
                                                   },
                                                   child: const Text("BOOK WITH THIS OFFER",
-                                                      style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: rColor.infoDisplayFont)),),
+                                                      style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: colorDecoration.infoDisplayFont)),),
                                                 )],
                                       ),
                                   ),
@@ -92,18 +92,18 @@ class _Description extends State<Description>{
                           });
                         },
                             child: const Text("See Offer Details",
-                                style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: rColor.fontOverWhite))),
+                                style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium,color: colorDecoration.fontOverWhite))),
                         Container(
                         height: Dimensions.descriptionBookOfferHeight,
                         width: Dimensions.descriptionBookOfferWidth,
                         decoration: BoxDecoration(
-                          border: Border.all(color: rColor.greenContainer,),),
+                          border: Border.all(color: colorDecoration.greenContainer,),),
                           child: Center(
                               child: TextButton( onPressed: (){
                                 Get.to(const DateTimeYear());
                               },
                                   child:const Text("BOOK WITH THIS OFFER",
-                              style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:rColor.infoDisplayFont))),),)
+                              style: TextStyle(fontSize: Dimensions.textSizeSmall,fontWeight: Dimensions.medium, color:colorDecoration.infoDisplayFont))),),)
                       ],
                     ),
                   ),

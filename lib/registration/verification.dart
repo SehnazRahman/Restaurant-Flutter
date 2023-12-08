@@ -33,7 +33,7 @@ class _VerificationPage extends State<Verification>{
         crossAxisAlignment: CrossAxisAlignment.start,
           children: [
           const Text("Register",
-          style: TextStyle(fontSize: Dimensions.textSizeExtraLarge, fontWeight: FontWeight.bold, color: rColor.fontOverWhite,)),
+          style: TextStyle(fontSize: Dimensions.textSizeExtraLarge, fontWeight: FontWeight.bold, color: colorDecoration.fontOverWhite,)),
           const SizedBox(
          height: 10,
           ),
@@ -41,15 +41,15 @@ class _VerificationPage extends State<Verification>{
             const SizedBox(
               height: Dimensions.spacebtwnItem
             ),
-            const Text("Verification Code:", style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.fontDefault),),
+            const Text("Verification Code:", style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.fontDefault),),
             TextFormField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
                 hintText: "Ex:12345",
                 focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                BorderSide(color: rColor.greenContainer,width:2)),
+                BorderSide(color: colorDecoration.greenContainer,width:2)),
                 enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                const BorderSide(color: rColor.greenContainer,width: 2)),
+                const BorderSide(color: colorDecoration.greenContainer,width: 2)),
               ),
             ),
             const SizedBox(

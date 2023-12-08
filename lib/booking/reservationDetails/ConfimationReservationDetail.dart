@@ -58,7 +58,7 @@ class _ReservationDetailState extends State<ReservationDetail> {
               const SizedBox(height: Dimensions.spacebtwnContainer),
               Center(
                 child: const Text("Add your data  to complete the reservation",
-                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.selectedBorder),),
+                style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.selectedBorder),),
               ),
                   Padding(
                     padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
@@ -78,9 +78,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                         hintText: "Mandatory",
                                         hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                         focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                        BorderSide(color: rColor.greenContainer,width:2)),
+                                        BorderSide(color: colorDecoration.greenContainer,width:2)),
                                         enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                        const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                        const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                       ),
                                     ),
                                   SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -92,9 +92,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                       hintText: "ex: 62233445",
                                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                      BorderSide(color: rColor.greenContainer,width:2)),
+                                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                      const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                      const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                     ),
                                   ),
                                   SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -106,9 +106,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                       hintText: "eg: Do you want a table by win",
                                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                      BorderSide(color: rColor.greenContainer,width:2)),
+                                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                      const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                      const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                     ),
                                   ),
                                 ],
@@ -128,9 +128,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                       hintText: "Mandatory",
                                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                      BorderSide(color: rColor.greenContainer,width:2)),
+                                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                      const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                      const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                     ),
                                   ),
                                   SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -142,9 +142,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                       hintText: "abc@example.com",
                                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                      BorderSide(color: rColor.greenContainer,width:2)),
+                                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                      const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                      const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                     ),
                                   ),
                                   SizedBox(height: Dimensions.spacebtwnContainer,),
@@ -156,9 +156,9 @@ class _ReservationDetailState extends State<ReservationDetail> {
                                       hintText: "eg: Welcome16",
                                       hintStyle: const TextStyle(color: Colors.grey,fontStyle: FontStyle.italic,fontSize: Dimensions.textSizeDefault),
                                       focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                                      BorderSide(color: rColor.greenContainer,width:2)),
+                                      BorderSide(color: colorDecoration.greenContainer,width:2)),
                                       enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                                      const BorderSide(color: rColor.selectedBorder,width: 2)),
+                                      const BorderSide(color: colorDecoration.selectedBorder,width: 2)),
                                     ),
                                   ),
                                 ],
@@ -190,7 +190,7 @@ class _ReservationDetailState extends State<ReservationDetail> {
                         child: Text(
                             "I do not want to receive communications from TheFork via email, "
                                 "and I will miss the best promotions, discounts with Yums and events. "
-                                "(Even if I don't check the box, I can unsubscribe at any time).", style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.infoDisplayFont),),
+                                "(Even if I don't check the box, I can unsubscribe at any time).", style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.infoDisplayFont),),
                       )
                     ],
                   ),
@@ -207,7 +207,7 @@ class _ReservationDetailState extends State<ReservationDetail> {
                       Expanded(
                         child: Text(
                           "I want to receive special offers and "
-                              "communications from the restaurant by email and SMS.", style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.infoDisplayFont),),
+                              "communications from the restaurant by email and SMS.", style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.infoDisplayFont),),
                       )
                     ],
                   ),
@@ -218,7 +218,7 @@ class _ReservationDetailState extends State<ReservationDetail> {
                         width: Dimensions.containerWidth,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: rColor.greenContainer),
+                            color: colorDecoration.greenContainer),
                         child:ElevatedButton(
                           onPressed: (){
                             Get.to(const BookingConfirm());

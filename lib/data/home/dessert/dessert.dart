@@ -10,9 +10,10 @@ class Dessert extends StatefulWidget {
 }
 
 class _DessertState extends State<Dessert> {
+  double fullRating = 0;
   @override
   Widget build(BuildContext context) {
-    double fullRating = 0;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -23,14 +24,15 @@ class _DessertState extends State<Dessert> {
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
-              'Assets/images/Chiacchiere_di_Nutella.png',
-              width: 100,
-              height: 100,
+            Expanded(flex:6,
+              child: Image.asset(
+                'Assets/images/Chiacchiere_di_Nutella.png',
+                width: 100,
+                height: 100,
+              ),
             ),
-
-            Padding(
-              padding: const EdgeInsets.all(10.0),
+            const SizedBox(width:Dimensions.spacebtwnSmallContainer),
+            Expanded( flex: 10,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
 
@@ -58,37 +60,37 @@ class _DessertState extends State<Dessert> {
                           });
                         },
                       ),
-                      const Text('77 reviews', style: TextStyle(fontSize: 12),),
+                      const Text('60 Reviews', style: TextStyle(fontSize: 12),),
                     ],
                   ),
-                  const Row(
-                    crossAxisAlignment: CrossAxisAlignment.end,
-                    children: [
-                      Text('6.5', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                      SizedBox(width: 210),
-                      Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                    ],)
-                ],),
-            )
+                  const Text('6.5', style: TextStyle(fontSize: 12,color: Colors.grey),),
+                  const SizedBox(width: 180),
+                ],),),
+            Expanded(flex:2,
+              child: IconButton(
+                iconSize: 25,
+                icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                onPressed: () {
+                },),
+            ),
           ],),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
-              'Assets/images/Tiramisu.png',
-              width: 100,
-              height: 100,
-            ),
-
-            Padding(
-              padding: const EdgeInsets.all(10.0),
+            Expanded(flex: 6,
+              child:Image.asset(
+                'Assets/images/Tiramisu.png',
+                width: 100,
+                height: 100,
+              ),),
+            const SizedBox(width:Dimensions.spacebtwnSmallContainer),
+            Expanded(flex: 10,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(
-                      width: 200,
+                      width: 210,
                       child: Text('Tiramisu', style: TextStyle(fontSize: 14),)),
-                  const SizedBox(height: 5,),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
@@ -110,35 +112,36 @@ class _DessertState extends State<Dessert> {
                           });
                         },
                       ),
-                      const Text('120 reviews', style: TextStyle(fontSize: 12),),
+                      const Text('55 Reviews', style: TextStyle(fontSize: 12),),
                     ],
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text('5.0', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                      SizedBox(width: 210,),
-                      Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                    ],)
-                ],),
-            )
+                  const Text('5', style: TextStyle(fontSize: 12,color: Colors.grey),),
+                ],),),
+            Expanded(flex: 2,
+              child: IconButton(
+                iconSize: 25,
+                icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                onPressed: () {
+                },),
+            ),
           ],),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Image.asset(
-              'Assets/images/Sicilian_cannoli.png',
-              width: 100,
-              height: 100,
+            Expanded( flex: 6,
+              child: Image.asset(
+                'Assets/images/Sicilian_cannoli.png',
+                width: 100,
+                height: 100,
+              ),
             ),
+            const SizedBox(width:Dimensions.spacebtwnSmallContainer),
 
-            Padding(
-              padding: const EdgeInsets.all(10.0),
+            Expanded(flex:10,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   const SizedBox(width: 200,child: Text('Sicilian cannoli', style: TextStyle(fontSize: 14),)),
-                  const SizedBox(height: 5,),
                   Row(
                     children: [
                       RatingBar.builder(
@@ -159,18 +162,19 @@ class _DessertState extends State<Dessert> {
                           });
                         },
                       ),
-                      const Text('120 reviews', style: TextStyle(fontSize: 12),),
+                      const Text('87 Reviews', style: TextStyle(fontSize: 12),),
                     ],
                   ),
-                  const Row(
-                    mainAxisAlignment: MainAxisAlignment.end,
-                    children: [
-                      Text('5.0', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                      SizedBox(width: 210,),
-                      Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                    ],)
+                  const Text('5', style: TextStyle(fontSize: 12,color: Colors.grey),),
                 ],),
-            )
+            ),
+            Expanded(flex: 2,
+              child: IconButton(
+                iconSize: 25,
+                icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                onPressed: () {
+                },),
+            ),
           ],),
       ],
     );

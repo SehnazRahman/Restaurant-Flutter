@@ -41,7 +41,7 @@ class MyDetails extends StatelessWidget {
                     const SizedBox(width: Dimensions.spacebtwnSmallContainer),
                     const Expanded(flex:8,
                       child: Text('davidwatson198',
-                      style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.infoDisplayFont),),
+                      style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.infoDisplayFont),),
                     ),
                     Expanded(flex:1,
                       child: TextButton(
@@ -49,7 +49,7 @@ class MyDetails extends StatelessWidget {
                           Get.to( EditName());
                         },
                         child: const Text('Edit',
-                          style: TextStyle(fontSize: Dimensions.textSizeMini,color: rColor.infoDisplayFont),),
+                          style: TextStyle(fontSize: Dimensions.textSizeMini,color: colorDecoration.infoDisplayFont),),
                     )),
                   ],
                 ),
@@ -77,7 +77,7 @@ class MyDetails extends StatelessWidget {
                     SizedBox(width: Dimensions.spacebtwnSmallContainer),
                     Expanded(flex:8,
                       child: Text('davidwatson198@gmail.com',
-                        style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.infoDisplayFont),),
+                        style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.infoDisplayFont),),
                     ),
                   ],
                 ),

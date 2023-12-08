@@ -26,7 +26,7 @@ class Location extends StatelessWidget {
             child: Column(
               children: [
                 const Text("Grant your location access",
-                style: TextStyle(fontSize:Dimensions.textSizeExtraLarge, fontWeight: FontWeight.bold, color: rColor.fontOverWhite )),
+                style: TextStyle(fontSize:Dimensions.textSizeExtraLarge, fontWeight: FontWeight.bold, color: colorDecoration.fontOverWhite )),
                 const Text("thefork needs your location to show the availability of your area",
                 style: TextStyle(fontSize: Dimensions.textSizeDefault),),
                 const SizedBox(
@@ -62,7 +62,7 @@ class Location extends StatelessWidget {
                         Get.to(const Home());
                       }, child: const Text('Select another location', style: TextStyle(color: Colors.green, fontSize: Dimensions.textSizeDefault, fontWeight: Dimensions.semiBold )),
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: rColor.whiteContainer,
+                        backgroundColor: colorDecoration.whiteContainer,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(16)),
                       ),
                     )

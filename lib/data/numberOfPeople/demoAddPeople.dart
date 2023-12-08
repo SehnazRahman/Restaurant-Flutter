@@ -36,13 +36,13 @@ class _AddPeopleDemoState extends State<AddPeopleDemo> {
                 children: [
                   const SizedBox(height: Dimensions.spacebtwnContainer,),
                   const Text(DefineText.searchRstntText,
-                      style: TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont ),textAlign: TextAlign.center),
+                      style: TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont ),textAlign: TextAlign.center),
                   const SizedBox(height: Dimensions.spacebtwnContainer,),
                   Container(
                     height: Dimensions.addPleoplecCntnrHeight,
                     width:MediaQuery.of(context).size.width*0.85,
                     decoration: BoxDecoration(
-                    border: Border.all(color: rColor.calenderContainer,),
+                    border: Border.all(color: colorDecoration.calenderContainer,),
                     ),
                       child:  Column(
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -64,7 +64,7 @@ class _AddPeopleDemoState extends State<AddPeopleDemo> {
                                   width: Dimensions.discountWidth,
                                   decoration: BoxDecoration(
                                       boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-                                      border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
+                                      border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5))
                                   ),
                                   child: Column(
                                     children: [
@@ -76,11 +76,11 @@ class _AddPeopleDemoState extends State<AddPeopleDemo> {
                                         child: Container(
                                           alignment: Alignment.center,
                                           decoration: const BoxDecoration(
-                                            color: rColor.discountContainer,
+                                            color: colorDecoration.discountContainer,
                                             boxShadow: [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
                                             borderRadius:BorderRadius.only(bottomLeft:Radius.circular(5),bottomRight: Radius.circular(5)) ,
                                           ),
-                                          child: const Text("-30%",style: TextStyle(color: rColor.discountFont,fontSize: Dimensions.textSizeSmall),),),
+                                          child: const Text("-30%",style: TextStyle(color: colorDecoration.discountFont,fontSize: Dimensions.textSizeSmall),),),
                                       ),
                                     ],
                                   ),

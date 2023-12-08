@@ -1,9 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:restaurant/Authorization/view/signIn.dart';
 import 'package:restaurant/const/color.dart';
-import 'package:flutter/material.dart';
 import 'package:restaurant/const/styling.dart';
-
 class welcome extends StatelessWidget {
   const welcome({
     super.key,
@@ -27,37 +26,32 @@ class welcome extends StatelessWidget {
               const SizedBox(
                 height: 150,
               ),
-              const Text(
+               Text(
                 "Welcome to",
-                style: TextStyle(fontSize: 24, color: Colors.white),
+                style: Theme.of(context).textTheme.headlineSmall,
                 textAlign: TextAlign.left,
               ),
               const SizedBox(
                 height: 15,
               ),
-              const Text(
-                "theforks",
-                style: TextStyle(
-                  fontSize: 50,
-                  fontWeight: FontWeight.w900,
-                  color: Colors.white,
-                ),
+              Text("theforks",
+                style: Theme.of(context).textTheme.headlineLarge,
                 textAlign: TextAlign.left,
               ),
               const SizedBox(
                 height: 15,
               ),
-              const Text(
+               Text(
                   "A place that gives your hunger a new option and where desires meet with a new food",
-                  style: TextStyle(fontSize: 18, color: Colors.white),
+                  style:Theme.of(context).textTheme.bodyMedium,
                   textAlign: TextAlign.left),
 
               const SizedBox(
                 height: 50,
               ),
-              const Text(
+              Text(
                 "Let's Get Started.",
-                style: TextStyle(fontSize: 16, color: Colors.white),
+                style: Theme.of(context).textTheme.bodyLarge,
                 textAlign: TextAlign.left,
               ),
               const SizedBox(
@@ -68,13 +62,13 @@ class welcome extends StatelessWidget {
                 width: Dimensions.containerWidth * 0.85,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: rColor.whiteContainer),
+                    color: colorDecoration.whiteContainer),
                 child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Image.asset('Assets/images/img_1.png', height: 25,width: 25,),
                       const Text("  Continue with Google",
-                          style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
+                          style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: colorDecoration.fontOverWhite))
                     ]),
               ),
               const SizedBox(
@@ -85,13 +79,13 @@ class welcome extends StatelessWidget {
                 width: Dimensions.containerWidth * 0.85,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
-                    color: rColor.whiteContainer),
+                    color: colorDecoration.whiteContainer),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Image.asset('Assets/images/img.png', height: 25,width: 25,),
                     const Text("  Continue with Email",
-                        style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: rColor.fontOverWhite))
+                        style: TextStyle(fontSize: Dimensions.textSizeDefault,fontWeight: Dimensions.semiBold,color: colorDecoration.fontOverWhite))
                   ],
                 ),
               ),

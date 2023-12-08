@@ -12,9 +12,10 @@ class Dish extends StatefulWidget {
 }
 
 class _DishState extends State<Dish> {
+  double fullRating = 0;
   @override
   Widget build(BuildContext context) {
-    double fullRating = 0;
+
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

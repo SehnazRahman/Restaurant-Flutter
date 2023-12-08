@@ -28,13 +28,13 @@ class _ReserveNow extends State<ReserveNow>{
           children: [
             const SizedBox(height: Dimensions.spacebtwnContainer,),
             const Text("Select any of the offer given below",style:
-            TextStyle(fontSize: Dimensions.textSizeSearch,color: rColor.infoDisplayFont),),
+            TextStyle(fontSize: Dimensions.textSizeSearch,color: colorDecoration.infoDisplayFont),),
             const SizedBox(height: Dimensions.spacebtwnContainer,),
             Container(
               height: Dimensions.checkBoxCntnrheight,
               width: MediaQuery.of(context).size.width*0.95,
               decoration: BoxDecoration(
-                border: Border.all(color: rColor.selectedBorder,),borderRadius: const BorderRadius.all(Radius.circular(10)),
+                border: Border.all(color: colorDecoration.selectedBorder,),borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
@@ -46,15 +46,15 @@ class _ReserveNow extends State<ReserveNow>{
                         width: Dimensions.descriptionOfferWidth*0.7,
                         decoration: const BoxDecoration(
                           borderRadius: BorderRadius.all(Radius.circular(10)),
-                        color: rColor.discountContainer,),
+                        color: colorDecoration.discountContainer,),
                         child: const Center(
                           child: Text('-30%',
-                            style: TextStyle(fontSize: Dimensions.textSizeSmall,color: rColor.discountFont ),),
+                            style: TextStyle(fontSize: Dimensions.textSizeSmall,color: colorDecoration.discountFont ),),
                         ),
                       ),
                       const SizedBox(width: Dimensions.spacebtwnSmallContainer,),
                       const Text('-30% on menu!',
-                        style: TextStyle(fontSize: Dimensions.textSizeSmall,color: rColor.fontDefault,fontWeight: Dimensions.medium),),
+                        style: TextStyle(fontSize: Dimensions.textSizeSmall,color: colorDecoration.fontDefault,fontWeight: Dimensions.medium),),
                     ],
                   ),
                   const SizedBox(height: Dimensions.spacebtwnSmallContainer,),
@@ -64,7 +64,7 @@ class _ReserveNow extends State<ReserveNow>{
                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                        children: [
                          const Text('  Drinks and Menus not include.',
-                            style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.fontDefault,),),
+                            style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.fontDefault,),),
                           IconButton(
                             style: IconButton.styleFrom(foregroundColor: isPressed? Colors.green: Colors.yellow,
                             ),
@@ -85,7 +85,7 @@ class _ReserveNow extends State<ReserveNow>{
               height: Dimensions.checkBoxCntnrheight,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
-                border: Border.all(color: rColor.selectedBorder,),borderRadius: const BorderRadius.all(Radius.circular(10)),
+                border: Border.all(color: colorDecoration.selectedBorder,),borderRadius: const BorderRadius.all(Radius.circular(10)),
               ),
               child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -95,10 +95,10 @@ class _ReserveNow extends State<ReserveNow>{
                         children: [
                           SizedBox(height: Dimensions.spacebtwnContainer,),
                           Text('Make a reservation without any special offer',
-                            style: TextStyle(fontSize: Dimensions.textSizeDefault,color: rColor.fontDefault,),),
+                            style: TextStyle(fontSize: Dimensions.textSizeDefault,color: colorDecoration.fontDefault,),),
                           Text('The standard “a la carte” reservation without offer',
                             style: TextStyle(fontSize: Dimensions.textSizeSearch
-                              ,color: rColor.infoDisplayFont,),),
+                              ,color: colorDecoration.infoDisplayFont,),),
                         ],
                       ),
                       IconButton(
@@ -118,7 +118,7 @@ class _ReserveNow extends State<ReserveNow>{
                   width: Dimensions.reserveNowWidth,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: rColor.greenContainer),
+                      color: colorDecoration.greenContainer),
                   child:ElevatedButton(
                   onPressed: (){
                       Get.to(const BookingEmailid());

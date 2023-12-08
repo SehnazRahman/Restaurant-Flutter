@@ -65,19 +65,19 @@ class _BookingConfirm extends State<BookingConfirm> {
                     const Center(
                       child: Text("The reservation is confirmed.",
                           style : TextStyle(
-                            color:rColor.infoDisplayFont,
+                            color:colorDecoration.infoDisplayFont,
                           fontSize:Dimensions.textSizeSearch,)),
                     ),
                     const Center(
                 child: Text("You will receive a confirmation by email.",
                     style : TextStyle(
-                      color:rColor.infoDisplayFont,
+                      color:colorDecoration.infoDisplayFont,
                       fontSize:Dimensions.textSizeSearch,)),
               ),
                     const Center(
                 child: Text("Your 100  Yums will be added to your account.",
                     style : TextStyle(
-                      color:rColor.infoDisplayFont,
+                      color:colorDecoration.infoDisplayFont,
                       fontSize:Dimensions.textSizeSearch,)),
               ),
                     const SizedBox(height: Dimensions.spacebtwnContainer),

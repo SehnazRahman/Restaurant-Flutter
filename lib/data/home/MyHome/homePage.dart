@@ -55,12 +55,12 @@ class _HomePageState extends State<HomePage> {
                     height: Dimensions.searchHeight,
                     width: MediaQuery.of(context).size.width,
                     decoration: BoxDecoration(
-                      border: Border.all(color: rColor.greenContainer,),
+                      border: Border.all(color: colorDecoration.greenContainer,),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Row(
                       children: [
-                         Expanded(flex:1,child: Center(child: Icon(Icons.search, color: rColor.infoDisplayFont)),),
+                         Expanded(flex:1,child: Center(child: Icon(Icons.search, color: colorDecoration.infoDisplayFont)),),
                          Expanded(flex: 15,
                            child:Center(
                              child: TextFormField(
@@ -82,14 +82,14 @@ class _HomePageState extends State<HomePage> {
                             height: Dimensions.searchHeight,
                             width: MediaQuery.of(context).size.width * 0.2,
                             decoration: const BoxDecoration(
-                                color: rColor.greenContainer,
+                                color: colorDecoration.greenContainer,
                                 borderRadius: BorderRadius.only(
                                     topRight: Radius.circular(10),
                                     bottomRight: Radius.circular(10))
                             ),
                             child: const Center(child: Text('GO', style: TextStyle(
                                 fontSize: Dimensions.textSizeDefaultLarge,
-                                color: rColor.fontOverGreen),)),
+                                color: colorDecoration.fontOverGreen),)),
                           ),
                         ),
                       ],

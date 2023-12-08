@@ -36,8 +36,8 @@ class ProfilePage extends StatelessWidget {
             RichText(
                 text: const TextSpan(
                     children: [
-                      TextSpan(text: "Nombre de usuario: ",style:TextStyle(color:rColor.fontOverWhite,fontSize: Dimensions.textSizeSmall,decoration: TextDecoration.underline),),
-                      TextSpan(text:" davidwatson198", style: TextStyle(color:rColor.fontOverWhite,fontSize: Dimensions.textSizeSmall),),
+                      TextSpan(text: "Nombre de usuario: ",style:TextStyle(color:colorDecoration.fontOverWhite,fontSize: Dimensions.textSizeSmall,decoration: TextDecoration.underline),),
+                      TextSpan(text:" davidwatson198", style: TextStyle(color:colorDecoration.fontOverWhite,fontSize: Dimensions.textSizeSmall),),
                     ]
                 )),
             const SizedBox(height: Dimensions.spacebtwnContainer),

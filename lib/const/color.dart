@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class rColor{
+class colorDecoration{
 
   // Color for Background Container
   static const Color whiteContainer = Colors.white;

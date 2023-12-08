@@ -46,7 +46,7 @@ class _TheForkPageState extends State<TheForkPage> {
 
                           ),
                             title: const Text('Sobresaliente',style: TextStyle(fontSize: Dimensions.textSizeSmall),),
-                            subtitle: const Text('829 Opiniones',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: rColor.infoDisplayFont),),
+                            subtitle: const Text('829 Opiniones',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: colorDecoration.infoDisplayFont),),
                            ),
                      ),
                       const SizedBox(height: Dimensions.spacebtwnSmallContainer),
@@ -55,21 +55,21 @@ class _TheForkPageState extends State<TheForkPage> {
                           Column(
                             children: [
                               Text('9.7/10',style: TextStyle(fontSize: Dimensions.textSizeSmall),),
-                              Text('Comida',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: rColor.infoDisplayFont),),
+                              Text('Comida',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: colorDecoration.infoDisplayFont),),
                             ],
                           ),
                           const SizedBox(width: Dimensions.spacebtwnSmallContainer),
                           Column(
                             children: [
                               Text('9.8/10',style: TextStyle(fontSize: Dimensions.textSizeSmall),),
-                              Text('Servico',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: rColor.infoDisplayFont),),
+                              Text('Servico',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: colorDecoration.infoDisplayFont),),
                             ],
                           ),
                           const SizedBox(width: Dimensions.spacebtwnSmallContainer),
                           Column(
                             children: [
                               Text('9.1/10',style: TextStyle(fontSize: Dimensions.textSizeSmall),),
-                              Text('Ambiente',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: rColor.infoDisplayFont),),
+                              Text('Ambiente',style: TextStyle(fontSize: Dimensions.textSizeExtraSmall, color: colorDecoration.infoDisplayFont),),
                             ],
                           ),
                         ],
@@ -91,8 +91,8 @@ class _TheForkPageState extends State<TheForkPage> {
                                 width: Dimensions.ItemTabWidth,
                                 child: LinearProgressIndicator(
                                   value: 0.96,
-                                  valueColor:const AlwaysStoppedAnimation(rColor.greenContainer),
-                                  backgroundColor: rColor.selectedBorder,
+                                  valueColor:const AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                                  backgroundColor: colorDecoration.selectedBorder,
                                   borderRadius: BorderRadius.circular(5),
                                   minHeight: 5,
                                 ),
@@ -111,8 +111,8 @@ class _TheForkPageState extends State<TheForkPage> {
                                   width: Dimensions.ItemTabWidth,
                                   child: LinearProgressIndicator(
                                     value: 0.5,
-                                    valueColor:const AlwaysStoppedAnimation(rColor.greenContainer),
-                                    backgroundColor: rColor.selectedBorder,
+                                    valueColor:const AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                                    backgroundColor: colorDecoration.selectedBorder,
                                     borderRadius: BorderRadius.circular(5),
                                     minHeight: 5,
                                   ),
@@ -131,8 +131,8 @@ class _TheForkPageState extends State<TheForkPage> {
                                   width: Dimensions.ItemTabWidth,
                                   child: LinearProgressIndicator(
                                     value: 0.2,
-                                    valueColor:const AlwaysStoppedAnimation(rColor.greenContainer),
-                                    backgroundColor: rColor.selectedBorder,
+                                    valueColor:const AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                                    backgroundColor: colorDecoration.selectedBorder,
                                     borderRadius: BorderRadius.circular(5),
                                     minHeight: 5,
                                   ),
@@ -151,8 +151,8 @@ class _TheForkPageState extends State<TheForkPage> {
                                   width: Dimensions.ItemTabWidth,
                                   child: LinearProgressIndicator(
                                     value: 0.1,
-                                    valueColor:const AlwaysStoppedAnimation(rColor.greenContainer),
-                                    backgroundColor: rColor.selectedBorder,
+                                    valueColor:const AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                                    backgroundColor: colorDecoration.selectedBorder,
                                     borderRadius: BorderRadius.circular(5),
                                     minHeight: 5,
                                   ),
@@ -171,8 +171,8 @@ class _TheForkPageState extends State<TheForkPage> {
                                   width: Dimensions.ItemTabWidth,
                                   child: LinearProgressIndicator(
                                     value: 0.1,
-                                    valueColor:const AlwaysStoppedAnimation(rColor.greenContainer),
-                                    backgroundColor: rColor.selectedBorder,
+                                    valueColor:const AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                                    backgroundColor: colorDecoration.selectedBorder,
                                     borderRadius: BorderRadius.circular(5),
                                     minHeight: 5,
                                   ),
@@ -264,7 +264,7 @@ class _TheForkPageState extends State<TheForkPage> {
               const SizedBox(height: Dimensions.spacebtwnContainer),
               Row(
                 children: [
-                 Image.asset('Assets/images/fork.png',color: rColor.greenContainer, height: 40,width: 40,),
+                 Image.asset('Assets/images/fork.png',color: colorDecoration.greenContainer, height: 40,width: 40,),
                  const SizedBox(width: Dimensions.spacebtwnSmallContainer),
                  const Expanded(
                    child: Text('Only users who have booked on the platforms or on a calendar'
@@ -281,30 +281,30 @@ class _TheForkPageState extends State<TheForkPage> {
                 height: Dimensions.dropdownHeight,
                 width:Dimensions.dropdownWidth ,
                 decoration: BoxDecoration(
-                  border: Border.all(color: rColor.greenContainer)
+                  border: Border.all(color: colorDecoration.greenContainer)
                      ),
-                child: const Center(child: Text('Newest', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverWhite),)),),
+                child: const Center(child: Text('Newest', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.fontOverWhite),)),),
                 Container(
                     height: Dimensions.dropdownHeight,
                     width:Dimensions.dropdownWidth ,
                     decoration: BoxDecoration(
-                        border: Border.all(color: rColor.greenContainer)
+                        border: Border.all(color: colorDecoration.greenContainer)
                     ),
-                    child: const Center(child: Text('Only opnions with comments ', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverWhite),)),),
+                    child: const Center(child: Text('Only opnions with comments ', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.fontOverWhite),)),),
                 Container(
                     height: Dimensions.dropdownHeight,
                     width:Dimensions.dropdownWidth ,
                     decoration: BoxDecoration(
-                        border: Border.all(color: rColor.greenContainer)
+                        border: Border.all(color: colorDecoration.greenContainer)
                     ),
-                    child: const Center(child: Text('Only opnions in Spanish', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverWhite),)),),
+                    child: const Center(child: Text('Only opnions in Spanish', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.fontOverWhite),)),),
                 Container(
                     height: Dimensions.dropdownHeight,
                     width:Dimensions.dropdownWidth,
                     decoration: BoxDecoration(
-                        border: Border.all(color: rColor.greenContainer)
+                        border: Border.all(color: colorDecoration.greenContainer)
                     ),
-                    child: const Center(child: Text('Chance', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: rColor.fontOverWhite),)),),
+                    child: const Center(child: Text('Chance', style: TextStyle(fontSize: Dimensions.textSizeExtraSmall,color: colorDecoration.fontOverWhite),)),),
                 ],
               ),
               const SizedBox(height: Dimensions.spacebtwnContainer),
@@ -349,7 +349,7 @@ class _TheForkPageState extends State<TheForkPage> {
                           ),
                         ],
                       ),),
-                    trailing: const Text('10/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: rColor.fontOverWhite),),
+                    trailing: const Text('10/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: colorDecoration.fontOverWhite),),
                   ),
                   const SizedBox(height: Dimensions.spacebtwnSmallContainer),
                   const Text('“When you find a place like this you have to come back many more times: It isa family restaurant, where from the moment you enter you notice the desirethey have that you are comfortable. then i ate it',
@@ -393,7 +393,7 @@ class _TheForkPageState extends State<TheForkPage> {
                           ),
                         ],
                       ),),
-                    trailing: const Text('9/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: rColor.fontOverWhite),),
+                    trailing: const Text('9/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: colorDecoration.fontOverWhite),),
                   ),
                   const SizedBox(height: Dimensions.spacebtwnSmallContainer),
                   const Text('“The delicious food. Very good risottos and fantastic pasta. Very rich desserts”',
@@ -437,7 +437,7 @@ class _TheForkPageState extends State<TheForkPage> {
                           ),
                         ],
                       ),),
-                    trailing: const Text('8.5/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: rColor.fontOverWhite),),
+                    trailing: const Text('8.5/10',style: TextStyle(fontSize: Dimensions.textSizeSmall,color: colorDecoration.fontOverWhite),),
                   ),
                   const SizedBox(height: Dimensions.spacebtwnSmallContainer),
                   const Text('“The food is delicious, although a bit expensive for the amount that they put(not so some dessert that was tremendous in size xD)”',

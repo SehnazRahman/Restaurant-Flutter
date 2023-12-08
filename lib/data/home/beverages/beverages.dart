@@ -10,9 +10,9 @@ class Beverages extends StatefulWidget {
 }
 
 class _BeveragesState extends State<Beverages> {
+  double fullRating = 0;
   @override
   Widget build(BuildContext context) {
-    double fullRating = 0;
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
@@ -25,19 +25,20 @@ class _BeveragesState extends State<Beverages> {
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(
-                  'Assets/images/Coffee.png',
-                  width: 100,
-                  height: 100,
+                Expanded(flex:6,
+                  child: Image.asset(
+                    'Assets/images/Coffee.png',
+                    width: 100,
+                    height: 100,
+                  ),
                 ),
-
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
+                const SizedBox(width:Dimensions.spacebtwnSmallContainer),
+                Expanded( flex: 10,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
 
                     children: [
-                      SizedBox(width: 200,child: const Text('Coffee', style: TextStyle(fontSize: 14),)),
+                      const SizedBox(width: 200,child: Text('Coffee', style: TextStyle(fontSize: 14),)),
                       const SizedBox(height: 5),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
@@ -60,37 +61,37 @@ class _BeveragesState extends State<Beverages> {
                               });
                             },
                           ),
-                          const Text('77 reviews', style: TextStyle(fontSize: 12),),
+                          const Text('60 Reviews', style: TextStyle(fontSize: 12),),
                         ],
                       ),
-                      const Row(
-                        crossAxisAlignment: CrossAxisAlignment.end,
-                        children: [
-                          Text('2.0', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                          SizedBox(width: 210),
-                          Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                        ],)
-                    ],),
-                )
+                      const Text('2', style: TextStyle(fontSize: 12,color: Colors.grey),),
+                      const SizedBox(width: 180),
+                    ],),),
+                Expanded(flex:2,
+                  child: IconButton(
+                    iconSize: 25,
+                    icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                    onPressed: () {
+                    },),
+                ),
               ],),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(
-                  'Assets/images/HalfBottleofwater.png',
-                  width: 100,
-                  height: 100,
-                ),
-
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
+                Expanded(flex: 6,
+                  child:Image.asset(
+                    'Assets/images/HalfBottleofwater.png',
+                    width: 100,
+                    height: 100,
+                  ),),
+                const SizedBox(width:Dimensions.spacebtwnSmallContainer),
+                Expanded(flex: 10,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                          width: 200,
-                          child: const Text('Half Bottle of water', style: TextStyle(fontSize: 14),)),
-                      const SizedBox(height: 5,),
+                      const SizedBox(
+                          width: 210,
+                          child: Text('Half Bottle of water', style: TextStyle(fontSize: 14),)),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.start,
                         children: [
@@ -112,35 +113,36 @@ class _BeveragesState extends State<Beverages> {
                               });
                             },
                           ),
-                          const Text('120 reviews', style: TextStyle(fontSize: 12),),
+                          const Text('60 Reviews', style: TextStyle(fontSize: 12),),
                         ],
                       ),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text('2.5', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                          SizedBox(width: 210,),
-                          Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                        ],)
-                    ],),
-                )
+                      const Text('2.5', style: TextStyle(fontSize: 12,color: Colors.grey),),
+                    ],),),
+                Expanded(flex: 2,
+                  child: IconButton(
+                    iconSize: 25,
+                    icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                    onPressed: () {
+                    },),
+                ),
               ],),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(
-                  'Assets/images/Bottleofwine.png',
-                  width: 100,
-                  height: 100,
+                Expanded( flex: 6,
+                  child: Image.asset(
+                    'Assets/images/Bottleofwine.png',
+                    width: 100,
+                    height: 100,
+                  ),
                 ),
+                const SizedBox(width:Dimensions.spacebtwnSmallContainer),
 
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
+                Expanded(flex:10,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 200,child: const Text('Bottle of wine', style: TextStyle(fontSize: 14),)),
-                      const SizedBox(height: 5,),
+                      const SizedBox(width: 200,child: Text('Bottle of wine', style: TextStyle(fontSize: 14),)),
                       Row(
                         children: [
                           RatingBar.builder(
@@ -161,35 +163,37 @@ class _BeveragesState extends State<Beverages> {
                               });
                             },
                           ),
-                          const Text('120 reviews', style: TextStyle(fontSize: 12),),
+                          const Text('60 Reviews', style: TextStyle(fontSize: 12),),
                         ],
                       ),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text('12.0', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                          SizedBox(width: 200,),
-                          Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                        ],)
+                      const Text('12', style: TextStyle(fontSize: 12,color: Colors.grey),),
                     ],),
-                )
+                ),
+                Expanded(flex: 2,
+                  child: IconButton(
+                    iconSize: 25,
+                    icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                    onPressed: () {
+                    },),
+                ),
               ],),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               children: [
-                Image.asset(
-                  'Assets/images/Glassofwine.png',
-                  width: 100,
-                  height: 100,
+                Expanded( flex: 6,
+                  child: Image.asset(
+                    'Assets/images/Glassofwine.png',
+                    width: 100,
+                    height: 100,
+                  ),
                 ),
+                const SizedBox(width:Dimensions.spacebtwnSmallContainer),
 
-                Padding(
-                  padding: const EdgeInsets.all(10.0),
+                Expanded(flex:10,
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(width: 200,child: const Text('Glass of wine', style: TextStyle(fontSize: 14),)),
-                      const SizedBox(height: 5,),
+                      const SizedBox(width: 200,child: Text('Glass of wine', style: TextStyle(fontSize: 14),)),
                       Row(
                         children: [
                           RatingBar.builder(
@@ -210,18 +214,19 @@ class _BeveragesState extends State<Beverages> {
                               });
                             },
                           ),
-                          const Text('120 reviews', style: TextStyle(fontSize: 12),),
+                          const Text('60 Reviews', style: TextStyle(fontSize: 12),),
                         ],
                       ),
-                      const Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          Text('3.0', style: TextStyle(fontSize: 12,color: Colors.grey),),
-                          SizedBox(width: 210,),
-                          Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
-                        ],)
+                      const Text('3', style: TextStyle(fontSize: 12,color: Colors.grey),),
                     ],),
-                )
+                ),
+                Expanded(flex: 2,
+                  child: IconButton(
+                    iconSize: 25,
+                    icon:const Icon(Icons.add_shopping_cart_sharp),color: Colors.green,
+                    onPressed: () {
+                    },),
+                ),
               ],),
           ],
         ),

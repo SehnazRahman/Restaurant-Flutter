@@ -56,7 +56,7 @@ class ReservationCancel extends StatelessWidget {
             const Center(
               child: Text("The reservation is confirmed.",
                   style : TextStyle(
-                    color:rColor.infoDisplayFont,
+                    color:colorDecoration.infoDisplayFont,
                     fontSize:Dimensions.textSizeSearch,)),
             ),
             const SizedBox(height: Dimensions.spacebtwnContainer,),

@@ -36,17 +36,17 @@ class _RegistrationPage extends State<Registration>{
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      const Text("Register", style: TextStyle(fontSize: Dimensions.textSizeExtraLarge, fontWeight: FontWeight.w900, color: rColor.fontOverWhite,)),
+                      const Text("Register", style: TextStyle(fontSize: Dimensions.textSizeExtraLarge, fontWeight: FontWeight.w900, color: colorDecoration.fontOverWhite,)),
                       const SizedBox(
                         height: 10,
                       ),
                       RichText(
                           text: const TextSpan(
                             children: [
-                              TextSpan(text: "Create an",style:TextStyle(color:rColor.fontDefault,fontSize: Dimensions.textSizeDefault),),
-                              TextSpan(text:" account", style: TextStyle(color:rColor.fontOverWhite,fontSize: Dimensions.textSizeDefault),),
-                              TextSpan(text:" to access all the features of",style:TextStyle(color:rColor.fontDefault,fontSize: Dimensions.textSizeDefault),),
-                              TextSpan(text:" thefork!", style: TextStyle(color:rColor.fontDefault,fontWeight: Dimensions.semiBold))
+                              TextSpan(text: "Create an",style:TextStyle(color:colorDecoration.fontDefault,fontSize: Dimensions.textSizeDefault),),
+                              TextSpan(text:" account", style: TextStyle(color:colorDecoration.fontOverWhite,fontSize: Dimensions.textSizeDefault),),
+                              TextSpan(text:" to access all the features of",style:TextStyle(color:colorDecoration.fontDefault,fontSize: Dimensions.textSizeDefault),),
+                              TextSpan(text:" thefork!", style: TextStyle(color:colorDecoration.fontDefault,fontWeight: Dimensions.semiBold))
                             ]
                             )),
                       const SizedBox(
@@ -62,9 +62,9 @@ class _RegistrationPage extends State<Registration>{
                               prefixIcon: const Icon(Icons.alternate_email_rounded, color: Colors.green,),
                               hintText: "Enter Email Id",
                               focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                              BorderSide(color: rColor.greenContainer,width:2)),
+                              BorderSide(color: colorDecoration.greenContainer,width:2)),
                               enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                              const BorderSide(color: rColor.greenContainer,width: 2)),
+                              const BorderSide(color: colorDecoration.greenContainer,width: 2)),
                             ),
                           ),
                           const SizedBox(
@@ -77,9 +77,9 @@ class _RegistrationPage extends State<Registration>{
                               prefixIcon: const Icon(Icons.person_2_outlined, color: Colors.green,),
                               hintText: "Ex:Saul Ramirez",
                               focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                              BorderSide(color: rColor.greenContainer,width:2)),
+                              BorderSide(color: colorDecoration.greenContainer,width:2)),
                               enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                              const BorderSide(color: rColor.greenContainer,width: 2)),
+                              const BorderSide(color: colorDecoration.greenContainer,width: 2)),
                             ),
                           ),
                           const SizedBox(
@@ -93,9 +93,9 @@ class _RegistrationPage extends State<Registration>{
                               prefixIcon: const Icon(Icons.remove_red_eye_outlined,color: Colors.green,),
                               hintText: "Enter the password",
                               focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-                              BorderSide(color: rColor.greenContainer,width:2)),
+                              BorderSide(color: colorDecoration.greenContainer,width:2)),
                               enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-                              const BorderSide(color: rColor.greenContainer,width: 2)),
+                              const BorderSide(color: colorDecoration.greenContainer,width: 2)),
                             ),
                           ),
                           const SizedBox(

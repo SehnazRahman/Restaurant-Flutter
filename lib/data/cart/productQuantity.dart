@@ -18,7 +18,7 @@ class _ProductQuantityState extends State<ProductQuantity> {
 
     return Scaffold(
       extendBodyBehindAppBar: true,
-    appBar: AppBar(
+      appBar: AppBar(
       backgroundColor: Colors.transparent,
       elevation: 0,
     ),
@@ -27,11 +27,11 @@ class _ProductQuantityState extends State<ProductQuantity> {
 
          SizedBox(
            height: 264,
-             width: MediaQuery.of(context).size.width,
+            width: MediaQuery.of(context).size.width,
              child: Image.asset('Assets/images/Fagottoni_di_ricotta.png', fit: BoxFit.cover,)),
 
          Padding(
-           padding: const EdgeInsets.all(Dimensions.paddingSizeLarge),
+           padding: const EdgeInsets.all(8.0),
            child: Column(
              children: [
                const SizedBox(height: Dimensions.spacebtwnContainer),
@@ -62,7 +62,7 @@ class _ProductQuantityState extends State<ProductQuantity> {
                ),
                const SizedBox(width: Dimensions.spacebtwnItem),
                 Center(
-                 child: Text( '$num',
+                 child: Text('${(num)}',
                    style: TextStyle(fontSize: Dimensions.textSizeSemiLarge),),
                ),
                 const SizedBox(width: Dimensions.spacebtwnItem),
@@ -88,7 +88,7 @@ class _ProductQuantityState extends State<ProductQuantity> {
                width: Dimensions.containerWidth,
                decoration: BoxDecoration(
                    borderRadius: BorderRadius.circular(10),
-                   color: rColor.greenContainer),
+                   color: colorDecoration.greenContainer),
                child:ElevatedButton(
                  onPressed: (){
                    Get.to(const MyCart());

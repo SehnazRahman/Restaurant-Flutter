@@ -64,8 +64,8 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
                       width: Dimensions.ItemTabWidth,
                       child: LinearProgressIndicator(
                         value: 0.39,
-                        valueColor:AlwaysStoppedAnimation(rColor.greenContainer),
-                        backgroundColor: rColor.selectedBorder,
+                        valueColor:AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                        backgroundColor: colorDecoration.selectedBorder,
                         minHeight: 10,
                       ),
                     )
@@ -86,8 +86,8 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
                       width: Dimensions.ItemTabWidth,
                       child: LinearProgressIndicator(
                         value: 0.25,
-                        valueColor:AlwaysStoppedAnimation(rColor.greenContainer),
-                        backgroundColor: rColor.selectedBorder,
+                        valueColor:AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                        backgroundColor: colorDecoration.selectedBorder,
                         minHeight: 10,
                       ),
                     )
@@ -108,8 +108,8 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
                       width: Dimensions.ItemTabWidth,
                       child: LinearProgressIndicator(
                         value: 0.13,
-                        valueColor:AlwaysStoppedAnimation(rColor.greenContainer),
-                        backgroundColor: rColor.selectedBorder,
+                        valueColor:AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                        backgroundColor: colorDecoration.selectedBorder,
                         minHeight: 10,
                       ),
                     )
@@ -130,8 +130,8 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
                       width: Dimensions.ItemTabWidth,
                       child: LinearProgressIndicator(
                         value: 0.02,
-                        valueColor:AlwaysStoppedAnimation(rColor.greenContainer),
-                        backgroundColor: rColor.selectedBorder,
+                        valueColor:AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                        backgroundColor: colorDecoration.selectedBorder,
                         minHeight: 10,
                       ),
                     )
@@ -152,8 +152,8 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
                       width: Dimensions.ItemTabWidth,
                       child: LinearProgressIndicator(
                         value: 0.11,
-                        valueColor:AlwaysStoppedAnimation(rColor.greenContainer),
-                        backgroundColor: rColor.selectedBorder,
+                        valueColor:AlwaysStoppedAnimation(colorDecoration.greenContainer),
+                        backgroundColor: colorDecoration.selectedBorder,
                         minHeight: 10,
                       ),
                     )
@@ -422,7 +422,7 @@ class _OptionTripAdvisorState extends State<OptionTripAdvisor> {
             ),
             Divider(thickness: 1),
             const SizedBox(height: Dimensions.spacebtwnSmallContainer),
-            Text('1-5 de 90 opinions', style:  TextStyle(color: rColor.infoDisplayFont,fontSize: Dimensions.textSizeSmall)),
+            Text('1-5 de 90 opinions', style:  TextStyle(color: colorDecoration.infoDisplayFont,fontSize: Dimensions.textSizeSmall)),
             SizedBox(height: Dimensions.spacebtwnItem),
             Text('Estas opiniones son las opiniones sunjetivas de viajeros individuales y no de Tripadvisor LLC ni de ninguno de sus socios comerciales', style: TextStyle(fontSize:Dimensions.textSizeSmall ),)
           ],

@@ -32,9 +32,9 @@ class _EditNameState extends State<EditName> {
               hintText: "David",
               hintStyle: const TextStyle(color: Colors.grey,fontSize: Dimensions.textSizeDefault),
               focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-              BorderSide(color: rColor.greenContainer,width:2)),
+              BorderSide(color: colorDecoration.greenContainer,width:2)),
               enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-              const BorderSide(color: rColor.greenContainer,width: 2)),
+              const BorderSide(color: colorDecoration.greenContainer,width: 2)),
             ),
           ),
           const SizedBox(height: Dimensions.spacebtwnContainer),
@@ -45,9 +45,9 @@ class _EditNameState extends State<EditName> {
               hintText: "Watson",
               hintStyle: const TextStyle(color: Colors.grey,fontSize: Dimensions.textSizeDefault),
               focusedBorder: const OutlineInputBorder(borderRadius: BorderRadius.all(Radius.circular(10)),borderSide:
-              BorderSide(color: rColor.greenContainer,width:2)),
+              BorderSide(color: colorDecoration.greenContainer,width:2)),
               enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide:
-              const BorderSide(color: rColor.greenContainer,width: 2)),
+              const BorderSide(color: colorDecoration.greenContainer,width: 2)),
             ),
           ),
           const SizedBox(height: Dimensions.spacebtwnContainer),
@@ -56,7 +56,7 @@ class _EditNameState extends State<EditName> {
               width: Dimensions.containerWidth,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: rColor.greenContainer),
+                  color: colorDecoration.greenContainer),
               child:ElevatedButton(
                 onPressed: (){
                   Get.to(const Home());

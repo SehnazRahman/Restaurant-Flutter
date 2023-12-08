@@ -18,7 +18,7 @@ class _ReviewRatingState extends State<ReviewRating> {
     return Scaffold(
       appBar: AppBar(
         elevation: 0,
-        backgroundColor: rColor.greenContainer,
+        backgroundColor: colorDecoration.greenContainer,
         title: const Text('Review and Options'),
       ),
       body: SingleChildScrollView(
@@ -37,9 +37,9 @@ class _ReviewRatingState extends State<ReviewRating> {
                     height: Dimensions.reviewOptionHeight,
                     width: Dimensions.reviewOptionWidth,
                     decoration:BoxDecoration(
-                      border: Border.all(color: rColor.greenContainer)
+                      border: Border.all(color: colorDecoration.greenContainer)
                     ),
-                      child: const Center(child: Text('thefork',style: TextStyle(fontSize: Dimensions.textSizeSmall,color:rColor.fontOverWhite),))
+                      child: const Center(child: Text('thefork',style: TextStyle(fontSize: Dimensions.textSizeSmall,color:colorDecoration.fontOverWhite),))
                   ),
                 ),
                 GestureDetector(
@@ -51,9 +51,9 @@ class _ReviewRatingState extends State<ReviewRating> {
                       height: Dimensions.reviewOptionHeight,
                       width: Dimensions.reviewOptionWidth,
                       decoration:BoxDecoration(
-                          border: Border.all(color: rColor.greenContainer)
+                          border: Border.all(color: colorDecoration.greenContainer)
                       ),
-                      child: const Center(child: Text('TRIPADVISOR',style: TextStyle(fontSize: Dimensions.textSizeSmall,color:rColor.fontOverWhite),))
+                      child: const Center(child: Text('TRIPADVISOR',style: TextStyle(fontSize: Dimensions.textSizeSmall,color:colorDecoration.fontOverWhite),))
                   ),
                 ),
               ],

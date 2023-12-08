@@ -71,7 +71,7 @@ class IncomingDemo extends StatefulWidget{
                                       const Text("Rs 14.9",
                                         style: TextStyle(
                                             fontSize: Dimensions.textSizeSearch,
-                                            color: rColor.infoDisplayFont),),
+                                            color: colorDecoration.infoDisplayFont),),
                                     ],
                                   ),),
                           trailing: const Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
@@ -115,7 +115,7 @@ class IncomingDemo extends StatefulWidget{
                               const Text("Rs 12.5",
                           style: TextStyle(
                               fontSize: Dimensions.textSizeSearch,
-                              color: rColor.infoDisplayFont),),
+                              color: colorDecoration.infoDisplayFont),),
                       ],
                     ),),
                            trailing: const Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),
@@ -159,7 +159,7 @@ class IncomingDemo extends StatefulWidget{
                               const Text("Rs 15.9",
                                 style: TextStyle(
                                     fontSize: Dimensions.textSizeSearch,
-                                    color: rColor.infoDisplayFont),),
+                                    color: colorDecoration.infoDisplayFont),),
                             ],
                           ),),
                         trailing: const Icon(Icons.add_shopping_cart_sharp,color: Colors.green,),

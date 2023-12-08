@@ -29,7 +29,7 @@ class _CountOfPeopleState extends State<CountOfPeople> {
     width: Dimensions.discountWidth,
     decoration: BoxDecoration(
     boxShadow: const [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
-    border: Border.all(color: rColor.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5)),),
+    border: Border.all(color: colorDecoration.discountBorder),borderRadius: const BorderRadius.all(Radius.circular(5)),),
     child: Column(
     children:[
     Expanded
@@ -40,11 +40,11 @@ class _CountOfPeopleState extends State<CountOfPeople> {
     child: Container(
     alignment: Alignment.center,
     decoration: const BoxDecoration(
-    color: rColor.discountContainer,
+    color: colorDecoration.discountContainer,
     boxShadow: [BoxShadow(color: Colors.grey,blurStyle: BlurStyle.outer,blurRadius:0.3)],
     borderRadius:BorderRadius.only(bottomLeft:Radius.circular(5),bottomRight: Radius.circular(5)) ,
     ),
-    child: const Text("-30%",style: TextStyle(color: rColor.discountFont,fontSize: Dimensions.textSizeSmall),),),
+    child: const Text("-30%",style: TextStyle(color: colorDecoration.discountFont,fontSize: Dimensions.textSizeSmall),),),
     )]
     ));
     }),),
